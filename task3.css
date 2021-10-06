@@ -1,0 +1,62 @@
+body, html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.task-info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    border-bottom: 5px solid black;
+}
+
+.task-info > img {
+    width: 50%;
+    align-self: center;
+}
+
+
+.bookshelf-container{
+    margin: auto auto;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 60vw;
+    background-color: gray;
+    border: 5px solid brown;
+    justify-content: space-evenly;
+}
+
+
+.shelf{
+    justify-content: space-evenly;
+    display: flex;
+    border: 1vw solid brown;
+    margin: 0;
+    padding: 0;
+    width: 30%;
+    list-style-type: none;
+}
+
+@media only screen and (max-width: 600px) {
+    body{
+        background-color: #212121;
+        color: white;
+    }
+
+    .shelf{
+        width: 40%;
+    }
+}
+
+
+.book{
+    margin: 1px;
+    height: 50px;
+    background-color: darkblue;
+    width: 1.5vw;
+    border: 2px solid lightblue;
+    list-style: none;
+}
