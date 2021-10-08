@@ -1,0 +1,28 @@
+html,body, ul{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+li{
+    width: calc(100% / 8);
+    aspect-ratio: 1/1;
+}
+
+/* Apply this color to every ODD row, and every EVEN child & Vice Versa*/
+ul:nth-child(odd)>li:nth-child(even), ul:nth-child(even)>li:nth-child(odd){
+    background-color: rgb(61, 148, 61);
+}
+
+/* For the 1/1 ratio, a more Compatible Version would be this ->
+li:after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+*/
